@@ -153,9 +153,9 @@ async def background():
         try:
             info_text = get_data()
             await client.wait_until_ready()
-            channel = client.get_channel(int(636458021135843330))
+            channel = client.get_channel(int(0123)) # input here id of your channel
             await channel.send(info_text)
-            sleep(randint(300,600))
+            sleep(randint(300,600)) # wait before next message
         except Exception as e:
             print (e)
             sleep(120)
